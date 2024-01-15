@@ -1,4 +1,3 @@
-
 call plug#begin()
 
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -14,14 +13,15 @@ Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
-
+"#################################"
 set number
-colorscheme onedark
-syntax enable
 set tabstop=4
 set shiftwidth=4
-set expandtab
+syntax enable
+colorscheme onedark 
+"#################################"
 
+"#################################"
 map <C-n> :NERDTreeToggle<CR>
 inoremap jk <Esc>
 inoremap jj <Esc>
@@ -31,6 +31,7 @@ inoremap [ []<Esc>ha
 inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
+"#################################"
 
 if (empty($TMUX))
   if (has("nvim"))
