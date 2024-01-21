@@ -6,21 +6,20 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 
-Plug 'vim-airline/vim-airline'
-
-"colorschemes"
 Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
 "#################################"
 set number
+set relativenumber
+set foldmethod=syntax
 set tabstop=4
 set shiftwidth=4
 syntax enable
 colorscheme onedark 
 "#################################"
-
+"
 "#################################"
 map <C-n> :NERDTreeToggle<CR>
 inoremap jk <Esc>
